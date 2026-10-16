@@ -1,0 +1,43 @@
+{
+  "name": "postgis_cuda",
+  "abstract": "GPU (CUDA, Hopper) spatial joins for PostGIS data, served by a resident-layer daemon",
+  "description": "ST_Intersects, ST_Area(ST_Intersection), ST_Relate, point in polygon, ST_ClusterIntersecting, ST_DWithin(geography) and intersects of negative geography buffers on layers held in GPU memory by the gpujoind daemon, validated pair for pair against PostGIS 3.6. The gpu_spatial extension is a thin client; gpujoind is built and run separately on a Hopper GPU (see README).",
+  "version": "0.1.0",
+  "maintainer": "Travis <travis@landrecords.us>",
+  "license": "postgresql",
+  "provides": {
+    "gpu_spatial": {
+      "file": "ext/gpu_spatial--0.1.sql",
+      "docfile": "README.md",
+      "version": "0.1.0",
+      "abstract": "Postgres client for the gpujoind GPU spatial join daemon"
+    }
+  },
+  "prereqs": {
+    "runtime": {
+      "requires": {
+        "PostgreSQL": "18.0.0"
+      }
+    }
+  },
+  "resources": {
+    "homepage": "https://github.com/landstats-us/postgis-cuda",
+    "bugtracker": {
+      "web": "https://github.com/landstats-us/postgis-cuda/issues"
+    },
+    "repository": {
+      "url": "git://github.com/landstats-us/postgis-cuda.git",
+      "web": "https://github.com/landstats-us/postgis-cuda",
+      "type": "git"
+    }
+  },
+  "tags": ["gpu", "cuda", "postgis", "spatial", "gis", "spatial join"],
+  "release_status": "testing",
+  "no_index": {
+    "directory": ["scripts", "tools"]
+  },
+  "meta-spec": {
+    "version": "1.0.0",
+    "url": "https://pgxn.org/meta/spec.txt"
+  }
+}

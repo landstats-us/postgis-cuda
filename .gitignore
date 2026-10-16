@@ -12,3 +12,5 @@
 __pycache__/
 *.nsys-rep
 *.ncu-rep
+# PGXN bundles (git archive)
+/postgis_cuda-*.zip
