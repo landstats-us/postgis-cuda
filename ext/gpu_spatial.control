@@ -1,0 +1,5 @@
+comment = 'GPU (CUDA, Hopper) spatial joins on resident layers served by gpujoind: ST_Intersects, ST_Area(ST_Intersection), ST_Relate, point-in-polygon, ST_ClusterIntersecting, ST_DWithin(geography) and intersects of negative geography buffers'
+default_version = '0.1'
+module_pathname = '$libdir/gpu_spatial'
+relocatable = true
+superuser = true

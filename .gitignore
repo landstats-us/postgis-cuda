@@ -1,0 +1,14 @@
+# local datasets, ground truth and results (extracts of production parcel data): never commit
+/data/
+/bench/
+# build outputs and the private patched CUDA copy (scripts/setup_cuda.sh)
+/build/
+/toolchain/
+/ext/*.so
+/ext/*.o
+/ext/*.bc
+# runtime: sockets, pids and auth tokens
+/run/
+__pycache__/
+*.nsys-rep
+*.ncu-rep
